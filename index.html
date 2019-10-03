@@ -24,11 +24,11 @@
                 <legend class="legend-contact">Contact Information</legend>
                     <div class="contact-label">
                         <label for="name">Full Name</label>
-                        <input type="text" id="name" name="full_name" class="field" placeholder="required"><br>
+                        <input type="text" id="name" name="full_name" class="field"  placeholder="required" required><br>
                         <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email_address" class="field" placeholder="required"><br>
+                        <input type="email" id="email" name="email_address" class="field" placeholder="required" required><br>
                         <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" class="field" name="phone_number" placeholder="111-333-444"> <br>
+                        <input type="tel" id="phone" class="field" name="phone_number" placeholder="111-333-444" > <br>
                         <label for="street">Street Address</label>
                         <input type="text" id="street" class="field" name="street_address" placeholder="address"><br>
                         <label for="city">City</label>
@@ -36,6 +36,10 @@
                         <label for="state">State</label>
                         <select  id="state" class="select-field" name="state">
                             <option value="0" disabled="" hidden="" selected="">choose state</option>
+                            <option value="banadir">Banadir</option>
+                            <option value="hodan">Hodan</option>
+                            <option value="madino">Madino</option>
+                            <option value="howlwadaag">Howlwadaag</option>
                         </select>
 
                         <label for="zip">Zip Code</label>
