@@ -1,0 +1,164 @@
+@import url(http://fonts.googleapis.com/css?family=Lora);
+
+/* Base elements*/
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', sans-serif;
+    line-height: 1.6;
+    color: #3a3a3a;
+    margin: 0;
+    padding: 0;
+    background-color: lightcyan;
+}
+h1,
+h3
+{
+    font-size: 20px;
+}
+fieldset{
+    padding: 0;
+    border: none;
+}
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],textarea, select{
+
+        border: none;
+        background-color: #cdcdc0;
+        width: 100%;
+        padding: 20px;
+        border-radius: 5px;
+        color: white;
+    }
+form legend{
+    font-size: 26px;
+    margin-bottom: 30px;
+    font-weight: bold;
+
+}
+button[type="submit"]
+{
+    width: 100%;
+    padding: 30px;
+    background-color: forestgreen;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+button[type="submit"]:hover{
+    cursor: pointer;
+}
+.select-field{
+    margin: 15px 0;
+    height: 60px;
+    color: #a3aeac;
+    background-color: #cdcdc0;
+}
+/*id selectors*/
+#zip{
+    width: 50%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+}
+
+/*class selectors*/
+.main-header{
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 0 0 15px;
+    border: 5px solid black;
+}
+.main-header h1{
+    text-transform: uppercase;
+}
+.wrapper{
+    margin: 0 20px;
+}
+.banner{
+    text-align: center;
+    border-bottom: 5px solid black;
+    padding-bottom: 30px;
+}
+.banner p {
+    font-size: 18px;
+    color: lightgray;
+    padding: 0 18px;
+}
+.contact-form{
+    padding-top: 30px;
+    margin-top: 5px;
+    border-top: 2px solid black;
+
+}
+.contact-form input{
+    display: block;
+}
+.field {
+    margin-top: 15px;
+}
+.field:focus,  .field:hover, textarea:focus, textarea:hover, select:focus, select:hover{
+    border: 2px solid black;
+    outline: none;
+    transition:  .2s;
+    background: lemonchiffon;
+}
+.field::placeholder{
+    text-align: right;
+    padding-right: 5px;
+}
+.newsletter-form{
+    padding-top: 30px;
+    border-top: 2px solid black;
+}
+.newsletter-form input{
+    margin: 10px 15px;
+}
+.news-legend{
+    margin-bottom: 10px;
+}
+.other-t{
+    margin: 30px 0;
+}
+.other-t textarea{
+    margin-top: 20px;
+    height: 170px;
+}
+.footer{
+    text-align: center;
+    margin: 50px 20px;
+    color: darkgray;
+}
+@media (min-width: 768px) {
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin: auto;
+    }
+    .contact-label{
+        display: flex;
+        flex-flow: wrap;
+    }
+    .contact-form label {
+        font-size: .9em;
+        flex: 1 25%;
+        margin-top: 33px;
+    }
+    .contact-label input, select {
+        flex: 1 75%;
+    }
+    .select-form {
+        margin: 15px 0 0;
+    }
+    #zip {
+        margin-right: 45%;
+        max-width: 30%;
+    }
+
+}
