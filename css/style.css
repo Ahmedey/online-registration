@@ -106,9 +106,9 @@ button[type="submit"]:hover{
 .field:focus,  .field:hover, textarea:focus, textarea:hover, select:focus, select:hover{
     border: 1px solid black;
     outline: none;
-    transition:  .2s;
+    transition: ease-in .3s;
     background: gainsboro;
-    height: 55px;
+
 }
 .field::placeholder{
     text-align: right;
